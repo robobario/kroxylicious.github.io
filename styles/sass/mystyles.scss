@@ -1,0 +1,16 @@
+@charset "utf-8";
+$kroxy-dark: #1f2421;
+$kroxy-light: #dce1de;
+$kroxy-light-green: #49a078;
+$kroxy-dark-green: #216869;
+
+$primary: $kroxy-dark-green;
+$white-ter: $kroxy-light;
+$white: $kroxy-light;
+$grey-dark: $kroxy-dark;
+$grey-darker: $kroxy-dark;
+$grey: #454A47;
+$grey-light: #6B706D;
+$grey-lighter: #909592;
+$grey-lightest: #B6BBB8;
+@import "node_modules/bulma/bulma.sass";
