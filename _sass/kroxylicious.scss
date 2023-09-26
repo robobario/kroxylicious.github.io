@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+$kroxy-dark: #1f2421;
+$kroxy-light: #dce1de;
+$kroxy-light-green: #49a078;
+$kroxy-dark-green: #216869;
+
+$white: #dce1de;
+$light: #b6bbb8;
+
+$theme-colors: (
+        "light":      #b6bbb8,
+        "dark":       $kroxy-dark,
+        "primary":    $kroxy-dark-green,
+        "secondary":  $kroxy-light-green,
+        "info":       #214569,
+        "success":    #1b9c48,
+        "warning":    #e9c51e,
+        "danger":     #ee0e33,
+);
+
+body, .card, .list-group, .list-group-item {
+  background-color: $kroxy-light;
+  border-color: $light;
+}
+
+.list-group-item > div > div > a {
+  color: $kroxy-dark!important;
+  text-decoration: none;
+}
+
+.list-group-item:hover {
+  background-color: rgba(73, 160, 119, 0.5);
+}
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css);

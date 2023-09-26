@@ -1,0 +1,29 @@
+<div class="card {{ include.shadow }} justify-content-center align-items-center gx-5 gy-5">
+     <div class="row w-100 g-0">
+          {% if include.image %}
+          <div class="col-md-4">
+               <img src="{{ include.image }}" class="img-fluid rounded-start" alt="{{ include.image_alt }}">
+          </div>
+          <div class="col-md-8">
+          {% else %}
+          <div class="col w-100">
+          {% endif %}
+               <div class="card-body">
+                    {% if include.title %}
+                         <div class="card-title m-2">
+                              {{ include.title }}
+                         </div>
+                    {% endif %}
+                    {% if include.subtitle %}
+                         <h6 class="card-subtitle m-2">
+                              {{ include.subtitle }}
+                         </h6>
+                    {% endif %}
+                    <div class="card-text m-2">
+                         {{ include.content }}
+                    </div>
+               </div>
+          </div>
+     </div>
+
+</div>
