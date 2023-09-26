@@ -5,7 +5,7 @@
   {% include list-group-item.html url="https://github.com/kroxylicious/design" content="Design & Discussion" icon="diagram-3" %}
   {% include list-group-item.html url="https://github.com/kroxylicious/kroxylicious/blob/main/LICENSE" content="License" icon="file-earmark-text" %}
   {% include list-group-item.html url="https://kroxylicious.slack.com" content="Community & Development chat via Slack" icon="slack" %}
-  {% include list-group-item.html url="{{ '/acknowledgements/' | absolute_url }}" content="Acknowledgements" icon="heart" %}
+  {% include list-group-item.html url={{ '/acknowledgements/' | absolute_url }} content="Acknowledgements" icon="heart" %}
   {% endcapture %}
 
   {% assign list_items = list_items | newline_to_br | split: "<br />" %}
