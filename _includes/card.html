@@ -20,10 +20,9 @@
                          </h6>
                     {% endif %}
                     <div class="card-text m-2">
-                         {{ include.content }}
+                         {{ include.content | markdownify }}
                     </div>
                </div>
           </div>
      </div>
-
 </div>

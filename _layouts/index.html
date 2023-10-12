@@ -2,18 +2,21 @@
 layout: default
 ---
 <div class="row justify-content-center">
-  <div class="col-md-3 mx-3">
-    <div class="row mx-1">
-      <img class="img-fluid float-start" src="{{ '/images/kroxylicious_logo_rgb_vert_default.svg' | absolute_url }}" alt="Placeholder image">
-    </div>
-    <div class="row mx-1 mt-3 mb-4">
-      <h3><i>{{ page.tagline }}</i></h3>
-    </div>
-    {% include project-links.html %}
-  </div>
-  <div class="col-lg-6 mx-3">
+  {% include sidebar.html %}
+  <div class="col-lg-6 mx-3" style="max-width: 1000px;">
+    <div class="d-none d-lg-block my-5"></div>
     <div class="p-3">
-      {{ content }}
+      <div class="card shadow justify-content-center align-items-center gx-5 gy-5">
+        <div class="row w-100 g-0">
+          <div class="col w-100">
+            <div class="card-body">
+              <div class="card-text m-2">
+                {{ content | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

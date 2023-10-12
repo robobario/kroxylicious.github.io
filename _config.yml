@@ -20,6 +20,7 @@
 
 title: Kroxylicious
 description: Network proxy framework for Apache Kafka
+tagline: "An open-source network proxy framework for Apache Kafka"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gracegrimwood.github.io/kroxylicious.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  kroxylicious
@@ -27,7 +28,6 @@ github_username:  kroxylicious
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-sass-converter
   - jekyll-seo-tag
 
 # Exclude from processing.

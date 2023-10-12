@@ -1,0 +1,23 @@
+<div class="col-md-3 mx-3 my-5 d-none d-lg-block" style="max-width: 450px;">
+    <div class="row mx-1">
+        <img class="img-fluid float-start" src="{{ '/images/kroxylicious_logo_rgb_vert_default.svg' | absolute_url }}" alt="Placeholder image">
+    </div>
+    <div class="row mx-1 mt-3 mb-4">
+        <h3><i>{{ site.tagline }}</i></h3>
+    </div>
+    {% include project-links.html %}
+</div>
+<div class="col-md-3 mx-3 mt-3 d-lg-none" style="max-width: 450px;">
+    <a class="btn btn-light mx-3" data-bs-toggle="collapse" href="#sidebarCollapse" role="button" aria-expanded="false" aria-controls="sidebarCollapse">
+        <span><i class="bi bi-list"></i> Show/Hide Links</span>
+    </a>
+    <div class="collapse mt-5" id="sidebarCollapse">
+        <div class="row mx-1 text-center justify-content-center">
+            <img class="img-fluid float-start w-75" src="{{ '/images/kroxylicious_logo_rgb_vert_default.svg' | absolute_url }}" alt="Placeholder image">
+        </div>
+        <div class="row mx-1 mt-2 mb-2 text-center">
+            <h4><i>{{ site.tagline }}</i></h4>
+        </div>
+        {% include project-links.html %}
+    </div>
+</div>
