@@ -18,6 +18,9 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-sass-converter'
   gem 'jekyll-seo-tag'
+  # For Bootstrap Sass Compilation
+  gem "autoprefixer-rails"
+  gem "jekyll-assets"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

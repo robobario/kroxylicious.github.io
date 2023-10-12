@@ -1,18 +1,19 @@
 @charset "utf-8";
+@import "./bootstrap/scss/functions";
 
+$kroxy-dark-green: #216869;
+$kroxy-light-green: #49a078;
 $kroxy-dark: #1f2421;
 $kroxy-light: #dce1de;
-$kroxy-light-green: #49a078;
-$kroxy-dark-green: #216869;
 
 $primary: $kroxy-dark-green;
 $secondary: $kroxy-light-green;
 $dark: $kroxy-dark;
 $light: $kroxy-light;
 
-// Custom bootstrap variables must be set or imported *before* bootstrap.
-@import url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css);
-
 .list-group-item:hover {
-  background-color: rgba($secondary, 0.5);
+  background-color: tint-color($secondary, 50%);
 }
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "./bootstrap/scss/bootstrap";

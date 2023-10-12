@@ -14,7 +14,7 @@ layout: default
                         <div class="container w-100 text-center position-absolute top-50">
                             <h1 class="card-title display-3">{{ page.title | escape }}</h1>
                             <h4 class="card-subtitle m-2">
-                                <small class="text-primary">
+                                <small class="text-light" data-bs-theme="dark">
                                     {{ page.date | date: date_format }}
                                     {% if page.author %}
                                         {% if page.author_url %}
@@ -31,10 +31,10 @@ layout: default
                         </div>
                     </div>
                 {% else %}
-                    <div class="card-header text-bg w-100 p-3">
+                    <div class="card-header text-bg w-100 px-5 py-3">
                         <h1 class="card-title display-3">{{ page.title | escape }}</h1>
                         <h4 class="card-subtitle m-2">
-                            <small class="text-body-secondary">
+                            <small class="text-primary">
                                 {{ page.date | date: date_format }}
                                 {% if page.author %}
                                     {% if page.author_url %}
