@@ -36,7 +36,7 @@ layout: default
                         {% endif %}
                             <div class="card-body mx-3 my-2">
                                 <h4 class="card-title">
-                                    <a class="page-link" href="{{ post.url | relative_url }}">
+                                    <a class="page-link" href="{{ post.url | absolute_url }}">
                                         {{ post.title | escape }}
                                     </a>
                                 </h4>
