@@ -22,18 +22,9 @@ We don't use the Bootstrap 5 ruby gem here, as it runs on a
 
 ### Running Locally
 
-To run the site locally, you'll first need to update the [Gemfile](Gemfile) by uncommenting the `jekyll` gem on line 10 and commenting out the `github-pages` gem on line 15.
+To run the site locally, you'll first need to update the [Gemfile](Gemfile) by uncommenting the `jekyll` gem and commenting out the `github-pages` gem.
 
-You'll then need to download the Bootstrap 5 Sass sources, which can be done with the following commands:
-
-```bash
-wget "https://github.com/twbs/bootstrap/archive/v5.3.2.zip" # download the full Bootstrap 5 sources (including JS)
-unzip v5.3.2.zip -d ./_sass # unpack the sources into the _sass/ directory
-mkdir ./_sass/bootstrap # make a directory to put the Bootstrap 5 Sass sources into
-mv ./_sass/bootstrap-5.3.2/scss ./_sass/bootstrap/scss # move the sources to your new directory
-rm -r ./_sass/bootstrap-5.3.2 # delete all the other Bootstrap sources (i.e. except the Sass ones, which we moved)
-rm v5.3.2.zip # delete the downloaded zip
-```
+You'll then need to download the Bootstrap 5 Sass sources by running [local_setup.sh](local_setup.sh).
 
 Then install the site's prerequisites by running this:
 
