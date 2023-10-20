@@ -1,68 +1,60 @@
 ---
 layout: default
 ---
-<div class="row justify-content-center">
-    {% include sidebar.html %}
-    <div class="col-lg-8 mx-3">
-        <div class="d-none d-lg-block my-5"></div>
-        <div class="p-3">
-            <div class="card text-bg shadow justify-content-center align-items-center gx-5 gy-5">
-                {%- assign date_format = site.date_format | default: "%B %-d, %Y" -%}
-                {% if page.image %}
-                    <div class="card-header text-bg-dark position-relative w-100 p-0">
-                        <img src="{{ page.image | absolute_url }}" class="img-fluid rounded-top object-fit-cover opacity-75" style="min-width:100%; max-height: 20em;" alt="{{ page.image_alt }}">
-                        <div class="container w-100 text-center position-absolute top-50">
-                            <h1 class="card-title display-3">{{ page.title | escape }}</h1>
-                            <h4 class="card-subtitle m-2">
-                                <small class="text-light" data-bs-theme="dark">
-                                    {{ page.date | date: date_format }}
-                                    {% if page.author %}
-                                        {% if page.author_url %}
-                                            by
-                                            <a class="text-reset" href="{{ page.author_url }}">
-                                                {{ page.author }}
-                                            </a>
-                                        {% else %}
-                                            by {{ page.author }}
-                                        {% endif %}
-                                    {% endif %}
-                                </small>
-                            </h4>
-                        </div>
-                    </div>
-                {% else %}
-                    <div class="card-header text-bg w-100 px-5 py-3">
-                        <h1 class="card-title display-3">{{ page.title | escape }}</h1>
-                        <h4 class="card-subtitle m-2">
-                            <small class="text-primary">
-                                {{ page.date | date: date_format }}
-                                {% if page.author %}
-                                    {% if page.author_url %}
-                                        by
-                                        <a class="text-reset" href="{{ page.author_url }}">
-                                            {{ page.author }}
-                                        </a>
-                                    {% else %}
-                                        by {{ page.author }}
-                                    {% endif %}
-                                {% endif %}
-                            </small>
-                        </h4>
-                    </div>
-                {% endif %}
-                <div class="row w-100 g-0">
-                    <div class="col w-100">
-                        <div class="card-body">
-                            {% if page.lead %}
-                            <div class="card-text m-2 lead">
-                                {{ page.lead }}
-                            </div>
+<div class="card text-bg shadow justify-content-center align-items-center gx-5 gy-5 m-5">
+    {%- assign date_format = site.date_format | default: "%B %-d, %Y" -%}
+    {% if page.image %}
+        <div class="card-header text-bg-dark position-relative w-100 p-0">
+            <img src="{{ page.image | absolute_url }}" class="img-fluid rounded-top object-fit-cover opacity-75" style="min-width:100%; max-height: 20em;" alt="{{ page.image_alt }}">
+            <div class="container w-100 text-center position-absolute top-50">
+                <h1 class="card-title display-3">{{ page.title | escape }}</h1>
+                <h4 class="card-subtitle m-2">
+                    <small class="text-light" data-bs-theme="dark">
+                        {{ page.date | date: date_format }}
+                        {% if page.author %}
+                            {% if page.author_url %}
+                                by
+                                <a class="text-reset" href="{{ page.author_url }}">
+                                    {{ page.author }}
+                                </a>
+                            {% else %}
+                                by {{ page.author }}
                             {% endif %}
-                            <div class="card-text m-2">
-                                {{ content | markdownify }}
-                            </div>
-                        </div>
-                    </div>
+                        {% endif %}
+                    </small>
+                </h4>
+            </div>
+        </div>
+    {% else %}
+        <div class="card-header text-bg w-100 px-5 py-3">
+            <h1 class="card-title display-3">{{ page.title | escape }}</h1>
+            <h4 class="card-subtitle m-2">
+                <small class="text-primary">
+                    {{ page.date | date: date_format }}
+                    {% if page.author %}
+                        {% if page.author_url %}
+                            by
+                            <a class="text-reset" href="{{ page.author_url }}">
+                                {{ page.author }}
+                            </a>
+                        {% else %}
+                            by {{ page.author }}
+                        {% endif %}
+                    {% endif %}
+                </small>
+            </h4>
+        </div>
+    {% endif %}
+    <div class="row w-100 g-0">
+        <div class="col w-100">
+            <div class="card-body">
+                {% if page.lead %}
+                <div class="card-text m-2 lead">
+                    {{ page.lead }}
+                </div>
+                {% endif %}
+                <div class="card-text m-2">
+                    {{ content | markdownify }}
                 </div>
             </div>
         </div>
