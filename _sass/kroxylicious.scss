@@ -1,0 +1,75 @@
+@charset "utf-8";
+// Required
+@import "./bootstrap/scss/functions";
+@import "./bootstrap/scss/variables";
+@import "./bootstrap/scss/variables-dark";
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap');
+
+$font-family-sans-serif:
+        "Josefin Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+        "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+
+$custom-colors: (
+  "kroxy-dark-green": #216869,
+  "kroxy-light-green": #49a078,
+  "kroxy-dark": #1f2421,
+  "kroxy-light": #dce1de,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$navbar-dark-color: rgba($white, 0.75);
+$navbar-dark-hover-color: rgba($white, 0.95);
+$navbar-dark-active-color: rgba($white, 1);
+$navbar-dark-disabled-color: rgba($white, 0.45);
+
+$kroxy-dark-green: #216869;
+$kroxy-mid-green: #358471;
+$kroxy-light-green: #49a078;
+$kroxy-dark: #1f2421;
+$kroxy-light: #dce1de;
+$kroxy-shadow-dark: rgba($kroxy-dark, 0.15);
+$kroxy-shadow-light: rgba($kroxy-light, 0.15);
+
+$primary: $kroxy-light-green;
+$secondary: $kroxy-dark-green;
+$dark: $kroxy-dark;
+$light: $kroxy-light;
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "./bootstrap/scss/bootstrap";
+
+.list-group-item:hover {
+  background-color: tint-color($primary, 50%);
+}
+
+.krx-navbar {
+  padding: 0.75rem 0;
+  background-color: transparent;
+  background: linear-gradient(to bottom, rgba($kroxy-dark, 1), rgba($kroxy-dark, 0.95));
+  box-shadow: 0 0.5rem 1rem $kroxy-shadow-dark,inset 0 -1px 0 $kroxy-shadow-dark;
+}
+
+.krx-gutter {
+  --bs-gutter-x: 3rem
+}
+
+.krx-nav-link {
+  color: rgba($white, 0.75);
+}
+
+.krx-nav-link.active {
+  text-shadow: 0 0 1rem $kroxy-shadow-light;
+}
+
+.krx-footer-license {
+  justify-content: flex-end!important;
+  margin-top: 1rem !important;
+}
+
+.krx-icon {
+  height: 1.7rem;
+  vertical-align: middle;
+}

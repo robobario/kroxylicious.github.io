@@ -1,0 +1,47 @@
+<header class="navbar navbar-expand-lg navbar-dark krx-navbar sticky-top">
+  <nav class="container-xxl krx-gutter flex-wrap flex-lg-nowrap" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="d-lg-none" style="width: 2.25rem;"></div>
+    <a class="navbar-brand p-0 me-0 me-lg-2" href="{{ '/' | absolute_url }}" aria-label="Kroxylicious">
+      <img src="{{ 'images/kroxylicious_logo_rgb_hori_reverse_bright.svg' | absolute_url }}"
+           alt="Kroxylicious: Network proxy framework for Apache Kafka" height=32>
+    </a>
+    <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots" aria-hidden="true"></i>
+    </button>
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" id="navbarContent" aria-labelledby="navbarContentOffcanvasLabel">
+      <div class="offcanvas-header px-4 pb-0">
+        <a class="navbar-brand p-0 me-0 me-lg-2" href="{{ '/' | absolute_url }}" aria-label="Kroxylicious">
+          <img src="{{ 'images/kroxylicious_logo_rgb_hori_reverse_bright.svg' | absolute_url }}"
+               alt="Kroxylicious: Network proxy framework for Apache Kafka" height=32>
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#navbarContent"></button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0 p-lg-0 justify-content-end">
+        <hr class="d-lg-none text-white-50">
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link {% if page.url == '/quickstarts/' %}active{% endif %} krx-nav-link py-2 px-0 px-lg-4" href="{{ '/quickstarts/' | absolute_url }}">
+              Get Started
+            </a>
+          </li>
+          <li class="nav-item py-lg-1 col-lg-auto">
+            <div class="vr d-none d-lg-flex h-100 text-white"></div>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link krx-nav-link py-2 px-0 px-lg-4" href="{{ '/kroxylicious' | absolute_url }}">
+              Docs
+            </a>
+          </li>
+          <li class="nav-item py-lg-1 col-lg-auto">
+            <div class="vr d-none d-lg-flex h-100 text-white"></div>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link {% if page.url == '/blog/' %}active{% endif %} krx-nav-link py-2 px-0 px-lg-4" href="{{ '/blog/' | absolute_url }}">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

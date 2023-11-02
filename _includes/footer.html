@@ -1,0 +1,126 @@
+<footer class="pt-4 pt-md-5 pb-0 mt-5 bg-body-tertiary">
+    <div class="container py-3 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row krx-footer-links justify-content-between">
+            <div class="col-lg-4 mb-3">
+                <a class="d-inline-flex align-items-center mb-3 text-body-emphasis text-decoration-none" href="/" aria-label="Kroxylicious">
+                    <img class="me-2 align-middle" src="{{ '/images/kroxylicious_logo_rgb_no_text.svg' | absolute_url }}" height="32" alt="Kroxylicious logo">
+                    <span class="fs-4">Kroxylicious</span>
+                </a>
+                <ul class="list-unstyled small">
+                    <li class="mb-3">
+                        <span>
+                            {{ site.tagline }}
+                        </span>
+                    </li>
+                    <li class="mb-3">
+                        We're always looking for new ideas and contributors.
+                        <br />
+                        Join the discussion on
+                        <a class="text-body text-decoration-none" href="https://kroxylicious.slack.com" target="_blank" rel="noopener">Slack</a>
+                        (<a class="text-body text-decoration-none" href="https://join.slack.com/t/kroxylicious/shared_invite/zt-1rzjijq6d-x7At3bfPiPqFEqc9RmNhYA" target="_blank" rel="noopener">invite</a>), or
+                        get involved on <a class="text-body text-decoration-none" href="https://github.com/kroxylicious/kroxylicious" target="_blank" rel="noopener">GitHub</a>.
+                    </li>
+                    <li class="mb-2">
+                        <div class="justify-content-start">
+                            <i class="bi bi-heart-fill me-1 align-middle"></i>
+                            <span>
+                                Thank you for supporting Kroxylicious:
+                            </span>
+                        </div>
+                        <div class="w-100 my-2">
+                            <a class="icon-link me-1" href="https://github.com">
+                                <img class="img-fluid krx-icon" src="{{ '/images/github-mark.svg' | absolute_url }}"/>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-2 mb-3 text-lg-end">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="{{ '/' | absolute_url }}">
+                            Home
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="{{ '/quickstarts/' | absolute_url }}">
+                            Get Started
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="{{ '/kroxylicious' | absolute_url }}">
+                            Docs
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="{{ '/blog/' | absolute_url }}">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3 text-lg-end">
+                <h5>Projects</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/kroxylicious">
+                            Kroxylicious
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/kroxylicious-junit5-extension">
+                            JUnit5 Extension
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/topic-encryption">
+                            Topic Encryption
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3 text-lg-end">
+                <h5>Community</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://kroxylicious.slack.com" target="_blank" rel="noopener">
+                            Slack
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/kroxylicious/issues" target="_blank" rel="noopener">
+                            Issues
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/kroxylicious/discussions" target="_blank" rel="noopener">
+                            Discussions
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-10-hover" href="https://github.com/kroxylicious/design" target="_blank" rel="noopener">
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row krx-footer-license">
+            <div class="col-9 col-lg-auto offset-lg-0 offset-3">
+                <ul class="list-unstyled small mb-0">
+                    <li class="text-end d-lg-inline d-block mb-1">
+                        &copy; Kroxylicious authors {{ 'now' | date: "%Y" }}
+                    </li>
+                    <li class="text-end d-lg-inline d-none mb-1">
+                        |
+                    </li>
+                    <li class="text-end d-lg-inline d-block mb-1">
+                        Kroxylicious licensed <a class="text-body text-decoration-none" href="https://github.com/kroxylicious/kroxylicious/blob/main/LICENSE" target="_blank" rel="license noopener">Apache-2.0</a>,
+                        documentation <a class="text-body text-decoration-none" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="license noopener">CC-BY-4.0</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

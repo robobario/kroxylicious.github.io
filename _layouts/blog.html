@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<div class="row align-items-start justify-content-center my-5">
+    <div class="col-lg-3 mb-5">
+        <div class="card px-2 mx-2">
+            <div class="card-body">
+                <h3 class="card-title">{{ page.title }}</h3>
+                <div class="container g-0 mt-4">
+                    <p class="card-text">
+                        {{ content }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        {% if site.paginate %}
+            {% assign posts = paginator.posts %}
+        {% else %}
+            {% assign posts = site.posts %}
+        {% endif %}
+        {%- if site.posts.size > 0 -%}
+            {%- if page.list_title -%}<h1 class="display-4">{{ page.list_title }}</h1>{%- endif -%}
+            {%- assign date_format = site.date_format | default: "%l:%M%P, %-d %B %Y" -%}
+            {%- for post in site.posts -%}
+                <div class="card shadow mb-4">
+                    <div class="row g-0">
+                        {% if post.image %}
+                            <div class="col-md-5">
+                                <img src="{{ post.image | absolute_url }}" class="img-fluid rounded-start" style="min-width:100%; min-height: 100%; max-height: 15em; object-fit: cover;" alt="{{ post.image_alt }}">
+                            </div>
+                            <div class="col-md-7 align-self-center">
+                        {% else %}
+                            <div class="col-md align-self-center">
+                        {% endif %}
+                            <div class="card-body mx-3 my-2">
+                                <h4 class="card-title">
+                                    <a class="page-link" href="{{ post.url | absolute_url }}">
+                                        {{ post.title | escape }}
+                                    </a>
+                                </h4>
+                                <p class="card-text">{{ post.excerpt | markdownify }}</p>
+                                <p class="card-text text-end"><small class="text-primary">{{ post.date | date: date_format }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
+        {%- endif -%}
+    </div>
+</div>
+{% if site.paginate %}
+    <nav aria-label="Blog post list navigation">
+        <ul class="pagination">
+            {%- if paginator.previous_page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">
+                        {{ paginator.previous_page }}
+                    </a>
+                </li>
+            {%- endif %}
+            <li class="page-item"><a class="page-link" href="#">{{ paginator.page }}</a></li>
+            {%- if paginator.next_page %}
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">
+                        {{ paginator.next_page }}
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            {%- endif %}
+        </ul>
+    </nav>
+{%- endif -%}

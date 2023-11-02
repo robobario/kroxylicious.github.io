@@ -2,20 +2,38 @@
 
 ## What?
 
-This is the repo containing the kroxylicious.io landing page
+This is the repo containing the kroxylicious.io website. The site runs on Jekyll, so you'll need to ensure you have the [prerequisites](https://jekyllrb.com/docs/) installed to try it locally.
 
 ## Key Files
-- [static/index.html](./static/index.html) - main page
-- [styles/sass/mystyles.scss](./styles/sass/mystyles.scss) - configuring CSS with kroxy colours
-- [build.sh](build.sh) - script to build site for development
-- [.github/workflows/generate-pages.yml](.github/workflows/generate-pages.yml) - github pages deployment
+- [Gemfile](Gemfile) - required ruby gems for building and serving the site
+- [_config.yml](_config.yml) - Jekyll configuration for building the site
+- [_sass/kroxylicious.scss](_sass/kroxylicious.scss) - configuring CSS with kroxy colours
+- [.github/workflows/jekyll-gh-pages.yml](.github/workflows/jekyll-gh-pages.yml) - workflow for building and deploying to GitHub Pages
 
 ## Development
 
-Built with node 18
+Built with Jekyll and Bootstrap 5
 
-Running `build.sh` will build the CSS and copy everything from
-static to a `build` directory that you can view in browser.
-
-There is a github action that builds and deploys the HTML/CSS
+There is a GitHub action that builds and deploys the HTML/CSS
 to the `gh-pages` branch on push to `main`.
+
+We don't use the Bootstrap 5 ruby gem here, as it runs on a
+`dart-sass` implementation that's incompatible with the one Jekyll uses.
+
+### Running Locally
+
+To run the site locally, you'll first need to update the [Gemfile](Gemfile) by uncommenting the `jekyll` gem and commenting out the `github-pages` gem.
+
+You'll then need to download the Bootstrap 5 Sass sources by running [local_setup.sh](local_setup.sh).
+
+Then install the site's prerequisites by running this:
+
+```bash
+bundle install
+```
+
+You can then run the site with this command (don't close the terminal once you've run this, or the process serving the site will terminate):
+
+```bash
+bundle exec jekyll serve
+```
