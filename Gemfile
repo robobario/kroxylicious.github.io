@@ -13,13 +13,9 @@ gem "jekyll", "~> 4.3.2"
 # gem "github-pages", "~> 228", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-asciidoc'
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-sass-converter'
   gem 'jekyll-seo-tag'
-  # For Bootstrap Sass Compilation
-  gem "autoprefixer-rails"
-  gem "jekyll-assets"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
