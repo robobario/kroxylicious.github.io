@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "kroxylicious-junit5-extension release 0.7.0"
-date:   2023-11-24 16:22:41 +1300
+date:   2023-11-24 00:00:00 +1300
 author: "Sam Barker"
 author_url: "https://www.github.com/sambarker"
 categories: 
