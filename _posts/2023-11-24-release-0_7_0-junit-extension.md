@@ -4,9 +4,7 @@ title:  "kroxylicious-junit5-extension release 0.7.0"
 date:   2023-11-24 00:00:00 +1300
 author: "Sam Barker"
 author_url: "https://www.github.com/sambarker"
-categories: 
-  - releases
-  - junit5-extension
+categories:  releases junit5-extension
 ---
 
 The Kroxylicious project is very pleased to announce the [0.7.0](https://github.com/kroxylicious/kroxylicious-junit5-extension/releases/tag/v0.7.0) release of our Junit5 Extension which adds the ability for test authors to automatically inject topics into their tests. 
