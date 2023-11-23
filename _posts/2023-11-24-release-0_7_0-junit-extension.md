@@ -13,7 +13,7 @@ The Kroxylicious project is very pleased to announce the [0.7.0](https://github.
 
 The Junit5 extension aims to simplify writing tests against Kafka clusters by providing test authors with ability to decoratively control a Kafka cluster to test against without worrying about the details of provisioning the cluster. 
 
-```java
+```java 
 import java.time.Duration;
 import java.util.Set;
 import java.util.concurrent.ExecutionException;
@@ -52,6 +52,8 @@ class ExampleTest {
     }
 }
 ```
+
+As part of this release users now need to ensure they have `org.apache.kafka:kafka_2.12` or `org.apache.kafka:kafka_2.13` available in test scope. This change allows users to change Kafka versions without waiting for a new release of the extension to support that Kafka version. 
 
 Further details about controlling the Kafka Cluster such as enabling KRaft support are can be found in the projects [readme](https://github.com/kroxylicious/kroxylicious-junit5-extension).
 
