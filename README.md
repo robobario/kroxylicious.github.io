@@ -2,7 +2,9 @@
 
 ## What?
 
-This is the repo containing the kroxylicious.io website. The site runs on Jekyll, so you'll need to ensure you have the [prerequisites](https://jekyllrb.com/docs/) installed to try it locally.
+This is the repo containing the kroxylicious.io website.
+The site runs on Jekyll, so you'll need to ensure you have the [prerequisites](https://jekyllrb.com/docs/) installed to try it locally.
+You'll also need to ensure you have Ruby 3.2+ installed, along with the latest versions of Rake and Bundler for your Ruby distribution.
 
 ## Key Files
 - [Gemfile](Gemfile) - required ruby gems for building and serving the site
@@ -12,7 +14,7 @@ This is the repo containing the kroxylicious.io website. The site runs on Jekyll
 
 ## Development
 
-Built with Jekyll and Bootstrap 5
+Built with Jekyll, Bootstrap 5, and Ruby 3.2
 
 There is a GitHub action that builds and deploys the HTML/CSS
 to the `gh-pages` branch on push to `main`.
@@ -22,7 +24,7 @@ We don't use the Bootstrap 5 ruby gem here, as it runs on a
 
 ### Running Locally
 
-To run the site locally, you'll first need to download the Bootstrap 5 Sass sources by running [local_setup.sh](local_setup.sh).
+To run the site locally, you'll first need to download the Bootstrap 5 Sass sources by running [bootstrap_setup.sh](bootstrap_setup.sh).
 
 Then install the site's prerequisites by running this:
 
