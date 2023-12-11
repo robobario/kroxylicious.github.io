@@ -11,4 +11,4 @@ The Kroxylicious project is very pleased to announce the [0.8.0](https://github.
 
 Further details about controlling the Kafka Cluster such as enabling KRaft support are can be found in the projects [readme](https://github.com/kroxylicious/kroxylicious-junit5-extension).
 
-Please let us know, through [Slack](https://kroxylicious.slack.com) or [GitHub](https://github.com/kroxylicious/kroxylicious-junit5-extension/issues), if you find the extension interesting or helpful  
+Please let us know, through [Slack](https://kroxylicious.slack.com) or [GitHub](https://github.com/kroxylicious/kroxylicious-junit5-extension/issues), if you find the extension interesting or helpful.
