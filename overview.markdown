@@ -2,6 +2,7 @@
 layout: overview
 title: Overview
 permalink: /overview/
+toc: true
 ---
 
 This page provides an overview of how Kroxylicious works.  For more details, please refer to the [documentation](./kroxylicious).
