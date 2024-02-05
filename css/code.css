@@ -1,3 +1,15 @@
+/*
+ * This file is a generated Rouge code highlighter theme, and can be
+ * re-generated with the `rougify` command. More info about this can be found
+ * at https://rouge.jneen.net/ or https://github.com/rouge-ruby/rouge
+ *
+ * NOTE: Manual adjustments to the code highlighting colors and fonts in this
+ * file will persist as it is not re-generated at runtime.
+ * However, any formatting that is not part of the Rouge theme should NOT be
+ * put in this file, and should instead go in _sass/kroxylicious.scss as it
+ * will be overwritten if this file is ever re-generated.
+ */
+
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1 {
@@ -148,23 +160,3 @@
 .highlight .w {
   color: #bbbbbb;
 }
-
-h2>a.anchor, h3>a.anchor, h4>a.anchor, h5>a.anchor, h6>a.anchor {
-  display: block;
-  margin-left: -1.5ex;
-  position: absolute;
-  text-decoration: none !important;
-  visibility: hidden;
-  z-index: 2;
-  transition: visibility 1s;
-}
-
-h2>a.anchor::before, h3>a.anchor::before, h4>a.anchor::before, h5>a.anchor::before, h6>a.anchor::before {
-  content: "\00A7";
-  display: block;
-}
-
-h2:hover>a.anchor, h2>a.anchor:hover, h3:hover>a.anchor, h3>a.anchor:hover, h4:hover>a.anchor, h4>a.anchor:hover, h5:hover>a.anchor, h5>a.anchor:hover, h6:hover>a.anchor, h6>a.anchor:hover {
-  visibility: visible;
-}
-
