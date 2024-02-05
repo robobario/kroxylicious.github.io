@@ -1,4 +1,10 @@
 ---
 ---
+/*
+ * This file exists solely to import the _sass/kroxylicious.scss file
+ * and the Rouge code highlighter theme CSS so they can be compiled by Jekyll.
+ * Any actual formatting should go in the _sass/kroxylicious.scss file, which
+ * is compiled into CSS by jekyll-sass-converter when the site is built.
+ */
 @import "kroxylicious";
 @import "code.css";
