@@ -33,6 +33,14 @@ $navbar-dark-disabled-color: rgba($white, 0.45);
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "./bootstrap/scss/bootstrap";
 
+body {
+  height: fit-content!important;
+}
+
+.krx-content * {
+  scroll-margin-top: 5rem!important;
+}
+
 .list-group-item:hover {
   background-color: tint-color($primary, 50%);
 }
