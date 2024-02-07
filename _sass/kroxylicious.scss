@@ -33,6 +33,14 @@ $navbar-dark-disabled-color: rgba($white, 0.45);
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "./bootstrap/scss/bootstrap";
 
+body {
+  height: fit-content!important;
+}
+
+.krx-content * {
+  scroll-margin-top: 5rem!important;
+}
+
 .list-group-item:hover {
   background-color: tint-color($primary, 50%);
 }
@@ -110,6 +118,8 @@ $navbar-dark-disabled-color: rgba($white, 0.45);
   }
 }
 
+// Rouge highlighter non-theme formatting
+// (AKA any formatting for Rouge that isn't part of the generated theme)
 
 .highlighter-rouge {
   background-color: #f8f8f8!important;
@@ -130,3 +140,31 @@ div.highlighter-rouge {
   }
 }
 
+// Anchor Links
+
+h2>a.anchor, h3>a.anchor, h4>a.anchor, h5>a.anchor, h6>a.anchor {
+  font-family: bootstrap-icons!important;
+  color: rgba($primary, 0);
+  display: block;
+  margin-left: -1.5ex;
+  position: absolute;
+  text-decoration: none !important;
+  visibility: hidden;
+  z-index: 2;
+  transition:
+          visibility 1ms linear,
+          color 200ms ease-in-out;
+}
+
+h2>a.anchor::before, h3>a.anchor::before, h4>a.anchor::before, h5>a.anchor::before, h6>a.anchor::before {
+  content: "\f470";
+}
+
+h2:hover>a.anchor, h3:hover>a.anchor, h4:hover>a.anchor, h5:hover>a.anchor, h6:hover>a.anchor {
+  visibility: visible;
+  color: rgba($primary, 1);
+}
+
+h2:hover>a.anchor:hover, h3:hover>a.anchor:hover, h4:hover>a.anchor:hover, h5:hover>a.anchor:hover, h6:hover>a.anchor:hover {
+  color: rgba($secondary, 1);
+}

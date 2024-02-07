@@ -1,5 +1,6 @@
 ---
 layout: default
+toc: true
 ---
 <div class="row justify-content-center">
   <div class="col-11 col-lg-8 card shadow gx-5 gy-5 m-lg-5">
@@ -7,7 +8,7 @@ layout: default
       <div class="col-auto">
         <div class="card-body">
           <div class="card-text m-2">
-            {{ content | markdownify }}
+            {{ content | markdownify | inject_anchors }}
           </div>
         </div>
       </div>
