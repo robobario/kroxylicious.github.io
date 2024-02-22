@@ -74,6 +74,11 @@ body {
   vertical-align: middle;
 }
 
+.krx-alert-content > p, .krx-alert-heading > p, .krx-card-nav-link > p {
+  // this is to get around some icky behaviour from markdownify
+  margin-bottom: 0;
+}
+
 .redhat-footer {
   background-color: $black;
   color: $white;

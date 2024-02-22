@@ -57,3 +57,5 @@ exclude:
 collections:
   use_cases:
     output: false
+  quickstarts:
+    output: false
