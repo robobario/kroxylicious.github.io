@@ -1027,11 +1027,11 @@
       "locked": false,
       "fontSize": 20,
       "fontFamily": 1,
-      "text": "EnvelopeEncryption\nFilter",
+      "text": "RecordEncryption\nFilter",
       "textAlign": "center",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "EnvelopeEncryption\nFilter",
+      "originalText": "RecordEncryption\nFilter",
       "lineHeight": 1.25,
       "baseline": 43
     },
@@ -5121,5 +5121,4 @@
       "created": 1699280980485,
       "lastRetrieved": 1702920460701
     }
-  }
 }
