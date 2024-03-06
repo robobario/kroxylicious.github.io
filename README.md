@@ -41,5 +41,5 @@ bundle exec jekyll serve
 # Excalidraw images
 
 Some content such as the use-cases include diagrams drawn in Excalidraw.  Browsers can't handle the format natively, so instead, in addition to
-preserving the `.excalidraw` we also export a transparent `.png` for inclusion in the content.
+commiting the `.excalidraw` orginals to the repo, we also export a transparent `.png` for inclusion in the content.
 
