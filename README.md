@@ -37,3 +37,9 @@ You can then run the site with this command (don't close the terminal once you'v
 ```bash
 bundle exec jekyll serve
 ```
+
+# Excalidraw images
+
+Some content such as the use-cases include diagrams drawn in Excalidraw.  Browsers can't handle the format natively, so instead, in addition to
+commiting the `.excalidraw` orginals to the repo, we also export a transparent `.png` for inclusion in the content.
+
