@@ -28,9 +28,9 @@ a Kafka Service offered by a cloud provider.
 
 A key concept in Kroxylicious is the Filter.  It is these that layer additional behaviours into the Kafka system.  
 
-| ![image](../assets/overview.png){:width="100%"} |
-|:-----------------------------------------------:|
-|                   *Overview*                    |
+| ![image](/assets/pages/overview.png){:width="100%"} |
+|:---------------------------------------------------:|
+|                     *Overview*                      |
 
 ##### Filters
 
@@ -42,9 +42,9 @@ their response counterparts, or both.
 Kroxylicious ships with some pre-built filters of its own (see [use-cases](../use-cases)). There is also the Filter API
 that lets you build custom filters, to fit your own use-case.
 
-| ![image](../assets/filter.png){:width="100%"} |
-|:---------------------------------------------:|
-|         *Request/Response Filtering*          |
+| ![image](/assets/pages/filter.png){:width="100%"} |
+|:-------------------------------------------------:|
+|           *Request/Response Filtering*            |
 
 
 ##### Filter Chains
@@ -55,7 +55,7 @@ For example, you may choose to build a filter chain compromising a policy enforc
 audit filter to suit the requirements of your use-case.
 
 
-| ![image](../assets/filter-chain.png){:width="100%"} |
+| ![image](/assets/pages/filter-chain.png){:width="100%"} |
 |:----------------------------------------------------:|
 |                   *Filter Chains*                    |
 
