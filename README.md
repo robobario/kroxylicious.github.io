@@ -38,6 +38,14 @@ You can then run the site with this command (don't close the terminal once you'v
 bundle exec jekyll serve
 ```
 
+# Binary content
+
+We have an ever-growing collection of binary assets, mostly images but also a few PDF slide decks etc all of these
+should go under `/assets/`. To try and preserve a bit of sanity to the repo we subdivide `/assets` into sections for each class of conent.
+- `/assets/pages/` - for binary assets related to the pages of the site.
+- `/assets/theme/` - for binary assets included as part of the site theme
+- `/assets/blog/` - for binary assets related to blog posts. Currently, blog has further sub dirs of `slides` & `images`.
+
 # Excalidraw images
 
 Some content such as the use-cases include diagrams drawn in Excalidraw.  Browsers can't handle the format natively, so instead, in addition to
