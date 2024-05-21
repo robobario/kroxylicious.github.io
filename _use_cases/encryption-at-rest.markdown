@@ -18,7 +18,7 @@ in addition to any in-house compliance requirements.
 The problem is made more complex if the enterprise has opted to utilise a Cloud Kafka Service as the confidential
 data is now residing in the clear on the file systems of the service provider.
 
-| ![image](../assets/pages/encryption-at-rest_problem.png){:width="100%"} |
+| ![image]({{'/assets/pages/images/encryption-at-rest_problem.png' | absolute_url}}){:width="100%"} |
 |:-----------------------------------------------------------------:|
 |    *Problem: Plain text records readable by the Kafka Admins*     |
 
@@ -97,9 +97,9 @@ encryption keys are to be used to encrypt the records of which topics. Uses case
 are encrypted and some remain unencrypted are supported.
 
 
-| ![image](../assets/pages/encryption-at-rest_solution.png){:width="100%"} |
-|:------------------------------------------------------------------:|
-|           *Kroxylicious Record Encryption Deployment[^2]*           |
+| ![image]({{'/assets/pages/images/encryption-at-rest_solution.png' | absolute_url}}){:width="100%"} |
+|:--------------------------------------------------------------------------------:|
+|                 *Kroxylicious Record Encryption Deployment[^2]*                  |
 
 <br/>
 
