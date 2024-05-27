@@ -84,7 +84,7 @@ The solution's foundations rest on industry-standard encryption techniques.
 
 * Envelope Encryption is employed to efficiently encrypt/decrypt records. Envelope Encryption is specified by [NIST SP.-800-57 part 1 revision 5](https://csrc.nist.gov/Projects/Key-Management/Key-Management-Guidelines).
 * Integrates with common Key Management Services for safe and secure storage of key encryption keys.
-  * Plugin for [HashiCorp Vault](https://www.hashicorp.com/)&#174; and [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)&#174;.
+  * Plugins for [HashiCorp Vault](https://www.hashicorp.com/)&#174; and [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)&#174;.
   * Additional KMS implementations are planned.
   * API available to plug in alternatives
 * Uses AES-GCM symmetric keys (in accordance with [NIST FIPS 197](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf)
