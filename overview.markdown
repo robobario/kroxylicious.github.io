@@ -5,7 +5,7 @@ permalink: /overview/
 toc: true
 ---
 
-This page provides an overview of how Kroxylicious works.  For more details, please refer to the [documentation](./kroxylicious).
+This page provides an overview of how Kroxylicious works.  For more details, please refer to the [documentation](https://kroxylicious.io/docs/v0.6.0/).
 
 #### What is Kroxylicious?
 
