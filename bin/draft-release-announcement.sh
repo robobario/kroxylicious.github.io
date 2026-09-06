@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# bin/new-release-post.sh
+# bin/draft-release-announcement.sh
 #
 # Interactive generator for a Kroxylicious proxy release announcement blog post.
 #
 # Usage:
-#   ./bin/new-release-post.sh
+#   ./bin/draft-release-announcement.sh
 #
 # The script prompts for:
 #   - The release version (e.g. 0.25.0)
@@ -140,6 +140,8 @@ Thank you all, your hard work is massively appreciated by the PMC!
 ### Artefacts
 
 Download binary distributions and container images from the [download](https://kroxylicious.io/download/${VERSION}/) page.
+
+See the [release notes](https://github.com/kroxylicious/kroxylicious/releases/tag/v${VERSION}) on GitHub for the full changelog.
 
 ### Feedback
 
